@@ -58,6 +58,28 @@ These metrics collectively offer a comprehensive evaluation of the pretrained mo
 
 ### Input Data
 `inputdata.csv`
+| Model                                                 | Accuracy | Precision | Recall | F1 Score      | ROC-AUC | Average Precision | Matthews Correlation Coefficient | Cohen's Kappa | Time (s)    | Log Loss     |
+| ------------------------------------------------------ | -------- | ----------| ------ | ------------- | ------- | ------------------ | -------------------------------- | ------------- | ----------- | ------------ |
+| Sakil/IMDB_URDUSENTIMENT_MODEL                        | 0.5      | 0.25      | 0.5    | 0.333333333   | 0.5     | 0.5                | 0                                | 0             | 232.2006447 | 0.693560283  |
+| mnoukhov/gpt2-imdb-sentiment-classifier               | 0.5      | 0.25      | 0.5    | 0.333333333   | 0.5     | 0.5                | 0                                | 0             | 443.7905507 | 2.84753836   |
+| wrmurray/roberta-base-finetuned-imdb                  | 0.5      | 0.25      | 0.5    | 0.333333333   | 0.5     | 0.5                | 0                                | 0             | 426.102942  | 3.108170235  |
+| kurianbenoy/distilbert-base-uncased-finetuned-sst-2-english-finetuned-imdb | 0.925 | 0.926152316 | 0.925 | 0.924949266   | 0.925   | 0.884196768       | 0.851151536                     | 0.85          | 222.5569022 | 2.817650585  |
 
 ### Output Data
 `output.csv`
+| Model                                                 | Accuracy | Precision | Recall | F1 Score      | ROC-AUC | Average Precision | Matthews Correlation Coefficient | Cohen's Kappa | Time (s)    | Log Loss     | Score        | Rank |
+| ------------------------------------------------------ | -------- | --------- | ------ | ------------- | ------- | ------------------ | -------------------------------- | ------------- | ----------- | ------------ | ------------ | ---- |
+| Sakil/IMDB_URDUSENTIMENT_MODEL                        | 0.5      | 0.25      | 0.5    | 0.333333333   | 0.5     | 0.5                | 0                                | 0             | 232.2006447 | 0.693560283  | 0.126805798  | 2    |
+| mnoukhov/gpt2-imdb-sentiment-classifier               | 0.5      | 0.25      | 0.5    | 0.333333333   | 0.5     | 0.5                | 0                                | 0             | 443.7905507 | 2.84753836   | 0.015307196  | 3    |
+| wrmurray/roberta-base-finetuned-imdb                  | 0.5      | 0.25      | 0.5    | 0.333333333   | 0.5     | 0.5                | 0                                | 0             | 426.102942  | 3.108170235  | 0            | 4    |
+| kurianbenoy/distilbert-base-uncased-finetuned-sst-2-english-finetuned-imdb | 0.925 | 0.926152316 | 0.925 | 0.924949266   | 0.925   | 0.884196768       | 0.851151536                     | 0.85          | 222.5569022 | 2.817650585  | 0.886738215  | 1    |
+
+
+
+## Analysis
+### Parameters Analysis
+![Parameters Analysis](https://raw.githubusercontent.com/pulkit8690/Topsis-For-Pretrained-Model-Text-Classification-/main/parameter.png)
+
+### Topsis Score vs Model
+![Topsis Score vs Model](https://github.com/pulkit8690/Topsis-For-Pretrained-Model-Text-Classification-/blob/main/comparison.png)
+
